@@ -12,6 +12,8 @@ nav:
 
 theme:
   name: material
+  logo: images/nd_logo.png
+  favicon: images/nd_logo.png  # Optional: if you want to use the same logo as favicon
   features:
     - navigation.tabs
     - navigation.sections
@@ -22,7 +24,6 @@ theme:
     - scheme: default
       primary: green
       accent: indigo
-      # text: white
 
 # Added to be able to have a "last update at" footer
 extra:
