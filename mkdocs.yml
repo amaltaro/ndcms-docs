@@ -1,0 +1,28 @@
+site_name: CMS Tier 3 at Notre Dame
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+
+nav:
+  - Home: index.md
+  - Research:
+    - Projects: research/projects.md
+    - Publications: research/publications.md
+  - Resources:
+    - Computing: resources/computing.md
+    - Data: resources/data.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - footnotes
