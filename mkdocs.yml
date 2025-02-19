@@ -1,4 +1,15 @@
-site_name: CMS Tier 3 at Notre Dame
+site_name: CMS Tier 3 at University of Notre Dame
+
+# Navigation bar to be updated upon new pages
+nav:
+  - Home: index.md
+  - Research:
+    - Projects: research/projects.md
+    - Publications: research/publications.md
+  - Resources:
+    - Computing: resources/computing.md
+    - Data: resources/data.md
+
 theme:
   name: material
   features:
@@ -13,15 +24,19 @@ theme:
       accent: indigo
       # text: white
 
+# Added to be able to have a "last update at" footer
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/amaltaro/ndcms-docs
+  generator: false  # Removes "Made with Material for MkDocs" from footer
 
-nav:
-  - Home: index.md
-  - Research:
-    - Projects: research/projects.md
-    - Publications: research/publications.md
-  - Resources:
-    - Computing: resources/computing.md
-    - Data: resources/data.md
+# Enable git revision date from git history
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
 
 markdown_extensions:
   - pymdownx.highlight:
