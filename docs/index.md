@@ -3,6 +3,10 @@ hide:
   - toc
 ---
 
+<p align="center">
+  <img src="images/nd_logo.png" width="300" alt="Notre Dame Logo">
+</p>
+
 # Welcome to our Tier3 Notre Dame CMS Documentation
 
 This documentation site contains information about the CMS Tier 3 cluster available at the University of Notre Dame.
