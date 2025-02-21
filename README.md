@@ -9,7 +9,7 @@ First, you'll need to install Python and pip (Python package manager). Then inst
 
 ```bash:mkdocs.yml
 # Install MkDocs and the Material theme
-pip install mkdocs mkdocs-material
+pip install mkdocs mkdocs-git-revision-date-localized-plugin
 
 # Create a new MkDocs project
 mkdocs new ndcms-docs

@@ -1,8 +1,3 @@
----
-hide:
-  - toc
----
-
 # Welcome to our Tier3 Notre Dame CMS Documentation
 
 This documentation site contains information about the CMS Tier 3 cluster available at the University of Notre Dame.
