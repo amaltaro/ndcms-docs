@@ -1,5 +1,7 @@
 site_name: CMS Tier 3 at University of Notre Dame
-theme: readthedocs
+theme:
+  name: readthedocs
+  logo: images/crc_logo.png
 
 # Navigation bar to be updated upon new pages
 nav:

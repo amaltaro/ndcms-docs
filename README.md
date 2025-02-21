@@ -1,5 +1,6 @@
 # ndcms-docs
-Documentation for the CMS Tier3 at Notre Dame
+Documentation for the ND CMS T3 Infrastructure
+
 
 # How to use this documentation repository
 
@@ -63,3 +64,43 @@ Visit `http://localhost:8000` to preview your documentation.
 ## 6. Deploy your documentation to GitHub Pages
 
 Your documentation will be available at `https://YOUR-USERNAME.github.io/ndcms-docs/`
+
+
+# Converting reStructuredText to Markdown
+
+First, install pandoc on your system:
+
+### MacOS
+```bash
+brew install pandoc
+```
+
+### Ubuntu/Debian
+```bash
+sudo apt-get update
+sudo apt-get install pandoc
+```
+
+### RHEL/CentOS/Fedora
+```bash
+sudo dnf install pandoc
+```
+
+Then, run the following command to convert an `.rst` file to `.md`.
+
+```bash
+# Basic conversion
+pandoc -f rst -t gfm input.rst -o output.md
+
+# With additional options for better GitHub-Flavored Markdown compatibility
+pandoc --wrap=none -f rst -t gfm input.rst -o output.md
+
+# For handling Sphinx documentation
+pandoc --wrap=none --from=rst --to=gfm-raw_html input.rst -o output.md
+```
+
+Note: After conversion, you may need to manually adjust:
+- Table of contents (toctree directives)
+- Sphinx-specific roles and directives
+- Cross-references
+- Code block language specifications
