@@ -3,6 +3,9 @@ theme:
   name: readthedocs
   logo: images/crc_logo.png
 
+extra_css:
+  - css/custom.css
+
 # Navigation bar to be updated upon new pages
 nav:
   - Home: index.md
